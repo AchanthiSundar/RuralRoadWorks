@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/header_layout_root"
+  android:background="@drawable/header"
+  android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="130dip" >
+
+        <ImageView
+            android:id="@+id/sample_image"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" 
+            android:layout_marginTop="2.5dp" 
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/headtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="TN Rural Works"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/sample_image"
+            android:src="@drawable/tamilnadu_logo" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

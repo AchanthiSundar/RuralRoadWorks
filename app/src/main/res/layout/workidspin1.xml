@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	android:background="@drawable/background" >
+    
+
+    <include
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:layout_alignParentTop="true"
+		android:id="@+id/header" 
+		layout="@layout/header_view" />	
+	     
+
+	
+	<include
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="bottom" 
+		android:layout_alignParentBottom="true"
+		android:id="@+id/footer" 
+		layout="@layout/footer" />
+
+	<ScrollView
+	    android:id="@+id/scrollView1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_above="@+id/footer"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/header" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+
+	        <RelativeLayout android:id="@+id/RL"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+
+	            <ImageView
+	                android:id="@+id/back_button"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:src="@drawable/back_button_selector" 
+	                android:layout_marginLeft="5dp" 
+	                android:layout_marginTop="5dp"/>
+
+	            <ImageView
+	   			   	android:id="@+id/home_button"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_alignParentRight="true"
+	    			android:src="@drawable/home" />
+
+	            <TextView
+	                android:id="@+id/tv_workidspin_workId"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerHorizontal="true"
+	                android:layout_centerVertical="true"
+	                android:text="TextView"
+	                android:textColor="#0000f0" 
+	                android:textAppearance="?android:attr/textAppearanceLarge"/>
+	            
+	        </RelativeLayout>
+	        <LinearLayout android:id="@+id/Linear_Layout_photo"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/RL" 
+	            android:gravity="center" 
+	            android:layout_marginTop="5dp">
+
+	            <ImageView
+	                android:id="@+id/taken_photo"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:src="@drawable/avatar" />
+	        
+	        </LinearLayout>
+	        
+	        <RelativeLayout android:id="@+id/Linear_Layout_Chainage"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/Linear_Layout_photo" android:layout_marginTop="10dp">
+
+	            <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="10dp"
+	                android:text="Chainage"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#000000"
+	                android:textSize="7pt" />
+
+	            <TextView
+	                android:id="@+id/tv_workidspin_chainage"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:layout_alignBaseline="@+id/textView1"
+	                android:layout_alignBottom="@+id/textView1"
+	                android:layout_alignParentRight="true"
+	                android:layout_marginRight="10dp"
+	                android:text="TextView"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#000000" />
+	       
+	       </RelativeLayout>
+	       
+	        <RelativeLayout android:id="@+id/Linear_Layout_StageGroup"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/Linear_Layout_Chainage" android:layout_marginTop="10dp">
+
+	            <TextView
+	                android:id="@+id/textView2"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="10dp"
+	                android:text="Stage Group"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#000000"
+	                android:textSize="7pt" />
+
+	            <TextView
+	                android:id="@+id/tv_workidspin_stageGroup"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:layout_alignBaseline="@+id/textView1"
+	                android:layout_alignBottom="@+id/textView1"
+	                android:layout_alignParentRight="true"
+	                android:layout_marginRight="10dp"
+	                android:text="TextView"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#000000" />
+	       
+	       </RelativeLayout>
+	       
+	        <RelativeLayout android:id="@+id/Linear_Layout_Stage"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/Linear_Layout_StageGroup" android:layout_marginTop="10dp">
+
+	            <TextView
+	                android:id="@+id/textView3"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="10dp"
+	                android:text="Stage"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#000000"
+	                android:textSize="7pt" />
+
+	            <TextView
+	                android:id="@+id/tv_workidspin_stage"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:layout_alignBaseline="@+id/textView1"
+	                android:layout_alignBottom="@+id/textView1"
+	                android:layout_alignParentRight="true"
+	                android:layout_marginRight="10dp"
+	                android:text="TextView"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#000000" />
+	       
+	       </RelativeLayout>
+	      
+	        <RelativeLayout android:id="@+id/Linear_Layout_QualityParamater"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/Linear_Layout_Stage" android:layout_marginTop="10dp">
+
+	            <TextView
+	                android:id="@+id/textView4"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="10dp"
+	                android:text="Quality Paramater"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#000000"
+	                android:textSize="7pt" />
+
+	            <TextView
+	                android:id="@+id/tv_workidspin_qualityParamater"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:layout_alignBaseline="@+id/textView1"
+	                android:layout_alignBottom="@+id/textView1"
+	                android:layout_alignParentRight="true"
+	                android:layout_marginRight="10dp"
+	                android:text="TextView"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#000000" />
+	       
+	       </RelativeLayout>
+	       
+	        <RelativeLayout android:id="@+id/Linear_Layout_QualityParamaterValue"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/Linear_Layout_QualityParamater" android:layout_marginTop="10dp">
+
+	            <TextView
+	                android:id="@+id/textView5"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="10dp"
+	                android:text="Quality Paramater Value"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#000000"
+	                android:textSize="7pt" />
+
+	            <TextView
+	                android:id="@+id/tv_workidspin_qualityParamaterValue"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:layout_alignBaseline="@+id/textView1"
+	                android:layout_alignBottom="@+id/textView1"
+	                android:layout_alignParentRight="true"
+	                android:layout_marginRight="10dp"
+	                android:text="TextView"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#000000" />
+	       
+	       </RelativeLayout>
+	       
+	        <RelativeLayout android:id="@+id/Linear_Layout_remarks"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/Linear_Layout_QualityParamaterValue" android:layout_marginTop="10dp" android:layout_marginLeft="10dp">
+
+	            <TextView
+	                android:id="@+id/textView6"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:text="Remarks"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#000000"
+	                android:textSize="7pt" />
+
+	            <TextView
+	                android:id="@+id/tv_workidspin_ramark"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:layout_alignBaseline="@+id/textView1"
+	                android:layout_alignBottom="@+id/textView1"
+	                android:layout_alignParentRight="true"
+	                android:layout_marginRight="10dp"
+	                android:text="TextView"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#000000" />
+	       
+	       </RelativeLayout>
+
+	        <RelativeLayout
+	            android:id="@+id/Linear_Layout_buttons"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" android:gravity="center" android:layout_marginTop="20dp">
+
+	            <Button
+	                android:id="@+id/but_workidspin_save"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:text="Save" android:background="@drawable/button_selector"/>
+
+	            <Button
+	                android:id="@+id/but_workidspin_upload"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentTop="true"
+	                android:layout_toRightOf="@+id/but_workidspin_save"
+	                android:text="Upload" android:layout_marginLeft="20dp" android:background="@drawable/button_selector"/>
+
+	        </RelativeLayout>
+	        
+	        <EditText
+ 	          android:id="@+id/editText1"
+ 	          android:layout_width="wrap_content"
+ 	          android:layout_height="wrap_content"
+ 	          android:layout_alignParentRight="true"
+ 	          android:visibility="gone" >
+
+ 	          <requestFocus />
+ 	      </EditText>
+
+ 	      <EditText
+ 	          android:id="@+id/editText2"
+ 	          android:layout_width="wrap_content"
+ 	          android:layout_height="wrap_content"
+ 	          android:layout_alignParentRight="true"
+ 	          android:visibility="gone" />
+
+ 	          <requestFocus />
+	        
+	    </LinearLayout>
+	</ScrollView>
+		
+</RelativeLayout>

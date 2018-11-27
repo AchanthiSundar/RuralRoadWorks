@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <!-- <include -->
+    <!-- android:layout_gravity="top" -->
+    <!-- android:layout_alignParentTop="true" -->
+    <!-- android:id="@+id/header" -->
+    <!-- layout="@layout/header_view" /> -->
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout001"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header" >
+
+        <ImageView
+            android:id="@+id/homeimg"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/backimg"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/back_button_selector" />
+
+        <TextView
+            android:id="@+id/tv_workid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="TextView"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#0000A0" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/RelativeLayout001"
+        android:layout_marginBottom="60dip" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/bg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt14"
+                        android:layout_width="80dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Select\nChainage\nfor Photo"
+                        android:textColor="#000000"
+                        android:textSize="6pt"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/txt14"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:prompt="@string/chainage_prompt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt14"
+                        android:layout_width="80dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Select\nStage\nGroup"
+                        android:textColor="#000000"
+                        android:textSize="6pt"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/txt14"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:prompt="@string/stagegroup_prompt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt13"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Select\nStage"
+                        android:textColor="#000000"
+                        android:textSize="6pt"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/txt11"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:prompt="@string/stagename_prompt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt14"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Select\nQuality\nParameters"
+                        android:textColor="#000000"
+                        android:textSize="6pt"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:id="@+id/spinner3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/txt14"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:prompt="@string/qp_prompt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt141"
+                        android:layout_width="80dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Select\nQuality\nPara Value"
+                        android:textColor="#000000"
+                        android:textSize="6pt"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:id="@+id/spinner4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/txt141"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:prompt="@string/qpv_prompt" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:textSize="22sp"
+                    android:hint="Enter Remarks" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/Button02"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_selector"
+                    android:text="Take Photo" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/header_view" />
+
+    <!--  -->
+
+    <include
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        layout="@layout/footer" />
+
+</RelativeLayout>

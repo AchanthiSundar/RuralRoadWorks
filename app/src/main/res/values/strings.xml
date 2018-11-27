@@ -1,0 +1,202 @@
+<resources>
+
+    <string name="app_name">RuralRoadWorks</string>
+    <string name="home">HOME</string>
+    <string name="phhint">User Name</string>
+    <string name="chainage_prompt">Chainage Location</string>
+
+    <string-array name="chainage_array">
+        <item>Select Chainage Location</item>
+        <item>200</item>
+        <item>400</item>
+        <item>600</item>
+        <item>800</item>
+    </string-array>
+
+    <string name="stagename_prompt">Stage Name</string>
+    <string name="qpv_prompt">Quality Parameter Value</string>
+
+    <string-array name="qpv_array">
+        <item>Select Quality Parameter Value</item>
+        <item>Yes</item>
+        <item>NO</item>
+    </string-array>
+
+    <string name="stagegroup_prompt">Stage Group</string>
+
+    <string-array name="stagegroup_array">
+        <item>Select Stage Group</item>
+        <item>Earth Work</item>
+        <item>CD works</item>
+        <item>Sub base</item>
+        <item>WBM I</item>
+        <item>WBM II</item>
+        <item>Premix Carpet and Seal coat</item>
+        <item>Physically completed</item>
+    </string-array>
+
+    <string name="stagen1_prompt">Stage Group</string>
+
+    <string-array name="stagen1_array">
+        <item>Select Stage Group</item>
+        <item>Earth Work in Progress</item>
+        <item>Earth work completed</item>
+    </string-array>
+
+    <string name="stagen2_prompt">Stage Group</string>
+
+    <string-array name="stagen2_array">
+        <item>Select Stage Group</item>
+        <item>In progress</item>
+        <item>Completed</item>
+    </string-array>
+
+    <string name="stagen3_prompt">Stage Group</string>
+
+    <string-array name="stagen3_array">
+        <item>Select Stage Group</item>
+        <item>Material Collection</item>
+        <item>Spreading progress</item>
+        <item>Completed</item>
+    </string-array>
+
+    <string name="stagen4_prompt">Stage Group</string>
+
+    <string-array name="stagen4_array">
+        <item>Select Stage Group</item>
+        <item>Material Collection</item>
+        <item>Spreading progress</item>
+        <item>Completed</item>
+    </string-array>
+
+    <string name="stagen5_prompt">Stage Group</string>
+
+    <string-array name="stagen5_array">
+        <item>Select Stage Group</item>
+        <item>Material Collection</item>
+        <item>Spreading progress</item>
+        <item>Completed</item>
+    </string-array>
+
+    <string name="stagen6_prompt">Stage Group</string>
+
+    <string-array name="stagen6_array">
+        <item>Select Stage Group</item>
+        <item>BT chips collection</item>
+        <item>Tack coat application</item>
+        <item>BT Work in progress and completion</item>
+    </string-array>
+
+    <string name="stagen7_prompt">Stage Group</string>
+
+    <string-array name="stagen7_array">
+        <item>Select Stage Group</item>
+        <item>Road furniture</item>
+    </string-array>
+
+    <string name="qp_prompt">Quality Parameter</string>
+
+    <string-array name="qp1_array">
+        <item>Select Quality Parameter</item>
+        <item>Whether EW for formation is in progress</item>
+        <item>Whether material used for formation is as per specification CC</item>
+        <item>Whether sub-grade/shoulders compaction is being done layer by layer</item>
+        <item>Whether shoulders formed upto the top level of next layer</item>
+    </string-array>
+    <string-array name="qp2_array">
+        <item>Select Quality Parameter</item>
+        <item>Whether required camber has been achieved</item>
+        <item>Whether super elevation has been provided in the curv</item>
+        <item>Whether compaction conforms to specification</item>
+        <item>Whether EW for formation is completed</item>
+    </string-array>
+    <string-array name="qp3_array">
+        <item>Select Quality Parameter</item>
+        <item>Verified at Ch……(one point every km</item>
+        <item>Whether location/span/type of CD and length/type of  protective works  is as per estimat</item>
+        <item>Whether any additional CD/protective works are required</item>
+        <item>Whether necessary quality control tests have been done</item>
+        <item>Whether quality of materials/work done conform to specification</item>
+    </string-array>
+    <string-array name="qp4_array">
+        <item>Select Quality Parameter</item>
+        <item>Whether Workmanship is satisfactory</item>
+        <item>Whether all CD/protective works have been completed</item>
+        <item>Whether CD works are functional</item>
+    </string-array>
+    <string-array name="qp5_array">
+        <item>Select Quality Parameter</item>
+        <item>Whether material collected is as per specification</item>
+        <item>Permission sought for spreading</item>
+    </string-array>
+    <string-array name="qp6_array">
+        <item>Select Quality Parameter</item>
+        <item>Whether watering done at OMC, spreading and compaction being done reachwise</item>
+        <item>Whether sideberms being compacted simultaneously</item>
+    </string-array>
+    <string-array name="qp7_array">
+        <item>Select Quality Parameter</item>
+        <item>Whether compaction conforms to specification</item>
+        <item>Verified at Ch……(one point every km</item>
+        <item>Whether thickness is as per estimat</item>
+        <item>Verified at Ch……(one point every km</item>
+    </string-array>
+    <string-array name="qp8_array">
+        <item>Select Quality Parameter</item>
+        <item>Whether shoulders formed upto the top level of next layer</item>
+        <item>Whether Grading of metal is as per specification</item>
+        <item>Whether Gravel collected for blindag</item>
+        <item>Whether Gravel collected is as per specification</item>
+        <item>Permission sought for spreading</item>
+    </string-array>
+    <string-array name="qp9_array">
+        <item>Select Quality Parameter</item>
+        <item>Whether shoulders being compacted simultaneously</item>
+        <item>Whether spreading, handpacking, gravel blindage and water rolling being done reachwise</item>
+        <item>Whether shoulders being compacted simultaneously</item>
+    </string-array>
+    <string-array name="qp10_array">
+        <item>Select Quality Parameter</item>
+        <item>Whether WBM compaction is sufficient</item>
+        <item>Whether thickness is as per estimate</item>
+    </string-array>
+    <string-array name="qp11_array">
+        <item>Select Quality Parameter</item>
+        <item>Whether shoulders formed upto the top level of next layer</item>
+        <item>Whether Grading of metal is as per specification </item>
+        <item>Whether Gravel collected for blindag</item>
+        <item>Whether Gravel collected is as per specification</item>
+        <item>Permission sought for spreading</item>
+    </string-array>
+    <string-array name="qp12_array">
+        <item>No Quality Parameter</item>
+    </string-array>
+    <string-array name="qp13_array">
+        <item>Select Quality Parameter</item>
+        <item>Whether WBM compaction is sufficient</item>
+        <item>Whether thickness is as per estimate</item>
+    </string-array>
+    <string-array name="qp14_array">
+        <item>Select Quality Parameter</item>
+        <item>Whether Grading is as per specification</item>
+    </string-array>
+    <string-array name="qp15_array">
+        <item>Select Quality Parameter</item>
+        <item>Whether cleaning properly don</item>
+        <item>Whether prime coat/Tack coat applied properly</item>
+    </string-array>
+    <string-array name="qp16_array">
+        <item>Select Quality Parameter</item>
+        <item>Whether quantity of binder is as per specification</item>
+        <item>Whether thickness is as per estimat</item>
+        <item>Whether rolling is sufficient and edge to edg</item>
+        <item>Whether the surface irregularities is within permissible limit</item>
+        <item>Whether edge packing done simultaneously with BT</item>
+    </string-array>
+    <string-array name="qp17_array">
+        <item>Select Quality Parameter</item>
+        <item>Whether Road furniture fixed</item>
+        <item>Whether culverts painted and necessary information inscribed</item>
+    </string-array>
+
+</resources>

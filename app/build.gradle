@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "28.0.3"
+    compileOptions.encoding = 'windows-1251'
+
+    defaultConfig {
+        applicationId "com.example.ruralroadworks"
+        minSdkVersion 21
+        targetSdkVersion 26
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+android {
+    useLibrary 'org.apache.http.legacy'
+    lintOptions {
+        abortOnError false
+    }
+}
+configurations {
+    all {
+        exclude module: 'httpclient'
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:26.1.0'
+    compile files('libs/httpmime-4.1-beta1.jar')
+    compile files('libs/org.apache.commons.codec.jar')
+}

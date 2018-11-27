@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dip"
+        android:gravity="top"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    <!-- <include -->
+    <!-- android:layout_gravity="top" -->
+    <!-- android:layout_alignParentTop="true" -->
+    <!-- android:id="@+id/header" -->
+    <!-- layout="@layout/header_view" /> -->
+
+
+    <!--  -->
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="bottom"
+        layout="@layout/header_view" />
+
+    <ImageView
+        android:id="@+id/emp_photo"
+        android:layout_width="350dip"
+        android:layout_height="350dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="16dip"
+        android:layout_marginTop="16dip"
+        android:src="@drawable/road_resize" />
+
+    <TextView
+        android:id="@+id/emp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/emp_photo"
+        android:gravity="left"
+        android:text="BLKDEMO"
+        android:textSize="25sp"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emp_name"
+        android:layout_marginTop="380dip" >
+
+        <ImageView
+            android:id="@+id/listimage2"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dip"
+            android:src="@drawable/pw" />
+
+        <TextView
+            android:id="@+id/pendingWorks"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Pending Works"
+            android:textColor="@drawable/selector"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pendingWorksCount"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout02" >
+
+        <ImageView
+            android:id="@+id/listimage3"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dip"
+            android:src="@drawable/pu" />
+
+        <TextView
+            android:id="@+id/pendingUploads"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Pending Uploads"
+            android:textColor="@drawable/selector"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pendingUploadCount"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <!--  -->
+
+    <include
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        layout="@layout/footer" />
+
+    <TextView
+        android:id="@+id/designation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emp_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/emp_photo"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout04"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Previous Visit Date :"
+            android:textSize="25sp"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:id="@+id/emp_last_visit_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Medium Text"
+            android:textSize="25sp"
+            android:textColor="#ff0000" />
+    </LinearLayout>
+
+</RelativeLayout>
